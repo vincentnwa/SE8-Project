@@ -25,14 +25,7 @@ How does success look like? (eg. Metrics)
 - User Reviews
 
 
-
-
-
-#  Modules that we have learned
-
-## Software Development Lifecycle (SDLC) and A Peek Into Product Manager
-
-## Technical and coding Knowledges
+## Technologies used / Technical and coding Knowledges
   - useState and Hook
   - Context
   - Reducers
@@ -40,7 +33,11 @@ How does success look like? (eg. Metrics)
   - React Router
   - Axios (API), Async and useEffect
 
-## How we using the knowledge that we learn to apply on this project
+## Screenshots of the working application
+
+## Learnings of each member
+
+## Challenges encountered during the project making
 
 # Project title: Bus Tracking App
   - We must think of a project name
