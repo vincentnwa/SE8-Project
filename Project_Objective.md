@@ -13,16 +13,16 @@
 ##  Craft a problem statement
 How might we make it convenient and easy for public transport users in order to reach home or meeting locations as fast as possible.
 
-## Craft a business narrative around your problem statement;
-1) What is the problem?
-I rush to bus stop but end up spend lots of time waiting for the bus when I could have done something else first with that waiting time.
+## Craft a business narrative around your problem statement
+What is the problem?
+- I rush to bus stop but end up spend lots of time waiting for the bus when I could have done something else first with that waiting time.
 
-2) Why is it worth solving (what is the business impact if you don’t solve it)?
-Allow people to plan and complete more things they want to do with that waiting time
-Allow people to get home or get to meeting places on time 
+Why is it worth solving (what is the business impact if you don’t solve it)?
+- Allow people to plan and complete more things they want to do with that waiting time
+- Allow people to get home or get to meeting places on time
 
-3) How does success look like? (eg. Metrics)
-User Reviews
+How does success look like? (eg. Metrics)
+- User Reviews
 
 
 
