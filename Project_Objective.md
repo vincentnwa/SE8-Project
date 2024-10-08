@@ -45,7 +45,7 @@ Once we created the app can bring what benefits for the business?
 # Project title: Bus Tracking App
   - We must think of a project name
   - Make a presentation in PowerPoint or Google Slide (for presentation use and come out the ideas to structure our project)
-  - Plan and Structure for the project UI / UX
+  - Plan and Structure for the project UI / UX (color/ how the app looks and etc...)
   - Organise the task and share with each other to working on the modules (Based on the knowledges we learn)
   - Compile all the module into a production app
   - Unit and UAT Testing
