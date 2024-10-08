@@ -11,17 +11,22 @@
 - Transportation is the essential tool for everyone
 
 ##  Craft a problem statement
-1. Many apps provide bus schedules, but they may have delays and are not always accurate. Why?
-2. Most apps do not provide a schedule planner function to save the journey itinerary to alert travelers. Why?
-3. Most of the app do not have the interaction function to update the real-time status. Why?
+How might we make it convenient and easy for public transport users in order to reach home or meeting locations as fast as possible.
 
-##  Why is important to solve?
-Reason to resolve the points in above. Need input on the comment. 
+## Craft a business narrative around your problem statement;
+1) What is the problem?
+I rush to bus stop but end up spend lots of time waiting for the bus when I could have done something else first with that waiting time.
 
-##  How to do this will with the app?
-This section for us to brainstorming to think about what function in the app can improve and better than other apps
-- List of function and how to create the modules?
-- Using what technical skill to apply?
+2) Why is it worth solving (what is the business impact if you don’t solve it)?
+Allow people to plan and complete more things they want to do with that waiting time
+Allow people to get home or get to meeting places on time 
+
+3) How does success look like? (eg. Metrics)
+User Reviews
+
+
+
+
 
 #  Modules that we have learned
 
