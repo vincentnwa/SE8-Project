@@ -23,14 +23,9 @@ This section for us to brainstorming to think about what function in the app can
 - List of function and how to create the modules?
 - Using what technical skill to apply?
 
-##  Business Narrative?
-Once we created the app can bring what benefits for the business?
-
 #  Modules that we have learned
 
 ## Software Development Lifecycle (SDLC) and A Peek Into Product Manager
-
-## Personal Branding (May be this project can be using for us to find better prospect)
 
 ## Technical and coding Knowledges
   - useState and Hook
@@ -44,7 +39,7 @@ Once we created the app can bring what benefits for the business?
 
 # Project title: Bus Tracking App
   - We must think of a project name
-  - Make a presentation in PowerPoint or Google Slide (for presentation use and come out the ideas to structure our project)
+  - Make a "User Stories" presentation in PowerPoint or Google Slide (for presentation use and come out the ideas to structure our project)
   - Plan and Structure for the project UI / UX (color/ how the app looks and etc...)
   - Organise the task and share with each other to working on the modules (Based on the knowledges we learn)
   - Compile all the module into a production app
