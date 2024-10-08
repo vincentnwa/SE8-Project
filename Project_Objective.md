@@ -4,9 +4,9 @@
 
 ##  Why is important to solve?
 
-##  Business Narrative?
-
 ##  How to do this will with the app?
+
+##  Business Narrative?
 
 #  Modules that we have learned
 
