@@ -1,0 +1,27 @@
+.container {
+    align-items: center;        
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.map {
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;      
+}
+.timeList{
+    border: solid 5px;
+}
+th, td {
+    border: 3px solid;
+    padding: 5px;
+  }
+ 
+.button{
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+  }
