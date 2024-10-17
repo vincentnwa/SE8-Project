@@ -2,6 +2,11 @@
  * the bus services for the BusArrival page.
  */
 
+// imports to use Leaflet, and react-leaflet. Note: they are 2 separate packages
+import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from "react-leaflet";
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css'; // Ensure you have Leaflet's CSS
+
 import { useState, useEffect, useMemo } from "react";
 import { busApi, BUS_STOPS, BUS_SERVICES, BUS_ROUTES } from "./apiUtils";
 import { BusRoutesContext, BusServicesContext, BusStopsContext,
@@ -10,6 +15,14 @@ import { BusRoutesContext, BusServicesContext, BusStopsContext,
 import { BusArrival } from "./BusArrival";
 import { BusRoutes } from "./BusRoutes";
 
+import LocationMarker from "./LocationMarker";
+
+const blueBusIcon = L.icon({
+    iconUrl: '/bus-icon-blue_600x600px.png',  // Specify the path to your custom icon
+    iconSize: [32, 32],                      // Size of the icon
+    iconAnchor: [16, 32],                    // Anchor point of the icon (the point where it is centered)
+    popupAnchor: [0, -32],                   // Popup anchor point
+});
 
 export function BusMain(){
   // List of initial variables need to display the bus
@@ -181,6 +194,15 @@ export function BusMain(){
       return getUniqueServiceNo();
     }, [busServices, isLoading])  
 
+  // Function that console logs the latitude longitude co-ordinates of where you click on the map
+  const LocationFinderDummy = () => {
+    const map = useMapEvents({
+        click(e) {
+            console.log("Co-ordinates clicked", e.latlng);
+        },
+    });
+    return null;
+  };
     
   return(
     <>
@@ -206,6 +228,40 @@ export function BusMain(){
       </BusRoutesContext.Provider>
       </BusServicesContext.Provider>
       </BusStopsContext.Provider>
+
+      <div>
+        <MapContainer
+          center={[1.2929, 103.852]} // City hall co-ordinates
+          zoom={12}
+          scrollWheelZoom={false}
+          className={styles.map}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {busStops.map( (busStop) => (
+            <Marker
+              key={busStop.BusStopCode}
+              position={[busStop.Latitude, busStop.Longitude]}
+              icon={blueBusIcon}
+            >
+              <Popup>
+                <div>
+                  Bus stop name: {busStop.Description}{" "}
+                  {/*Bus Stop Name eg. Opp Tanglin View*/}
+                  <br />
+                  {busStop.BusStopCode}, {busStop.RoadName}{" "}
+                  {/*eg. 10271, Alexandra Rd*/}
+                </div>
+              </Popup>
+            </Marker>
+          ))}
+          <LocationMarker />
+          <LocationFinderDummy />
+        </MapContainer>
+      </div>
+      
       </>
     )}
     
