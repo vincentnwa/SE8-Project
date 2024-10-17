@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0; /* Removed auto for more consistent centering */
+    background-color: #e0e7ff; 
+}
+
+/* main container */
+
+.mainContainer {
+    position: relative;
+    width: 90vw;
+    max-width: 380px; /* Increased max-width for better usability */
+    margin: 0 auto; /* Centering the container */
+}
+
+.container {
+    position: relative;
+    width: 100%; /* Changed to 100% to use full width of mainContainer */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for readability */
+    border-radius: 15px;    
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect on container */
+.container:hover {
+    transform: translateY(-2px) scale(1.02); 
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Disable hover effect on touch devices */
+@media (hover: none) {
+    .container:hover {
+        transform: none; 
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Text Styling  */
+h1 {
+    font-size: 1.2rem; /* Adjusted font size for better visibility */
+}
+
+p {
+    font-size: 0.8rem; /* Adjusted for readability */
+} 
+
+.locationInputContainer input {
+    font-size: 1rem; /* Updated for consistency with button sizes */
+}
+
+/* Button Styling */
+button {
+    height: 40px; /* Increased for better usability */
+    font-size: 1rem; /* Updated for consistency */
+    color: white;
+    background-color: #3b82f6; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); /* Slight lift */
+}
+
+/* Active effect for buttons */
+button:active {
+    background-color: #1d4ed8; /* Even darker blue when pressed */
+    transform: translateY(2px); /* Button moves down slightly when clicked */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for specific buttons */
+.returnButton {
+    margin-top: 15px;
+    background-color: #ef4444; /* Red for logout */
+}
+
+.favoriteButton {
+    margin-top: 15px;
+    background-color: #ec4899; /* Pink for favorites */
+}
+
+/* Suggestion item hover effect */
+.suggestionItem:hover {
+    background-color: #e0e7ff; /* Light blue background */
+    border-left: 4px solid #6366f1; /* Highlight selection */
+}
+
+.suggestionsList {
+    width: 90%; /* Match the input width */
+    max-height: 150px; /* Slightly increased max height */
+    list-style: none; /* Remove bullet points */
+    margin: 10px auto; /* Reduced margin for better alignment */
+    padding: 0;
+    border: 1px solid #ccc; /* Border around suggestions */
+    border-radius: 5px;
+    background-color: white; /* White background for visibility */
+    position: absolute; /* Position it under the input */
+    z-index: 1000; /* Bring it to front */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+/* Suggestion item */
+.suggestionItem {
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 0.9rem; /* Increased for readability */
+    transition: background-color 0.2s; 
+}
+
+/* Input Field Styling */
+.locationInputContainer input {
+    font-size: 1rem; /* Consistent font size */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Hover and Focus effects for input */
+.locationInputContainer input:hover {
+    border-color: #6366f1;
+}
+
+.locationInputContainer input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul, li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 380px) {
+    p {
+        font-size: 0.9rem; /* Adjusted for better readability */
+    } 
+
+    .locationInputContainer input {
+        font-size: 0.8rem; /* Smaller font on small screens */
+    }
+
+    button {
+        height: 40px; /* Consistent height */
+        font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+
+    /* Suggestion item */
+    .suggestionItem {
+        font-size: 0.8rem; 
+    }
+}
+
+.busResultContainer {
+    display: flex;
+    width: 80%;
+    max-height: 40vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #a8aaac;  /* testing */ 
+}
+
+.busResultContainer ul li {
+    margin: 0 px;
+    gap: 10px;
+    list-style: none;
+}
+
+.busNoTag {
+    
+}
+
+
