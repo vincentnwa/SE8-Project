@@ -1,0 +1,33 @@
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    background-color: #4c525e;
+    padding : 0px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 0;
+    
+}
+/* Style for list items */
+.listItem {
+    padding: 0px 15px;
+    transition: background-color 1s ease;
+}
+
+/* Hover effect for list items */
+.listItem:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Style for the links */
+.listItem a {
+    text-decoration: none;
+    color: inherit; /* Inherits the text color, making hover more effective */
+}
+
+.listItem a:hover {
+    color: Red; /* Change link color on hover */
+}

@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  z-index: 1000; /* Ensure the header is above the content */
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+button {
+  margin-left: 10px;
+}
